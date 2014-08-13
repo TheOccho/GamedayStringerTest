@@ -1,0 +1,6 @@
+GamedayStringerTest
+===================
+bower install
+
+
+boom!
