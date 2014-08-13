@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript" src="bower_components/requirejs/require.js"></script>
+<script>
+  requirejs.config({
+    baseUrl: "bower_components",
+    paths: {
+      "jquery": "jquery/dist/jquery",
+      "rivets": "rivets/dist/rivets",
+      "stapes": "stapes/stapes",
+      "hogan": "requirejs-hogan-plugin/hogan",
+      "text": "requirejs-hogan-plugin/text"
+    }
+  });
+  requirejs(["../src/main"], function(main) {
+    main.init("#container");
+  });
+</script>
+</head>
+<body>
+	<div id="container"></div>
+</body>
+</html>

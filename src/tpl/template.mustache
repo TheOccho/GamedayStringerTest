@@ -1,0 +1,12 @@
+<section id="auction">
+  <h1 rv-color="auction.color">{ auction.title }</h1>
+  <img rv-src="auction.image.url" width="200" height="150">
+
+  <aside rv-show='auction.remaining | lt 120'>
+    <h4>Hurry up!<h4>
+    <p>This auction is ending in { auction.remaining | time }.</p>
+    <input type="text" rv-value="auction.amount | currency"/>
+  </aside>
+
+  <button rv-on-click="controller.bid">Place a bid</button>
+</section>
